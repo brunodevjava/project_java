@@ -1,0 +1,132 @@
+plugins {
+	id 'org.springframework.boot' version '2.7.3'
+	id 'io.spring.dependency-management' version '1.0.13.RELEASE'
+	id 'java'
+}
+
+group = 'com.project'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+configurations {
+	compileOnly {
+		extendsFrom annotationProcessor
+	}
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	// https://mvnrepository.com/artifact/org.apache.poi/poi
+	implementation 'org.apache.poi:poi:4.1.2'
+
+
+
+	implementation 'org.webjars.npm:vega-projection:1.4.5'
+	implementation 'org.webjars.npm:turf__projection:6.5.0'
+	implementation 'org.webjars.npm:d3-geo-projection:3.0.0'
+	implementation 'com.lightbend.akka:akka-projection_2.13:0.1'
+	implementation 'com.lightbend.akka:akka-projection-eventsourced_2.13:1.2.2'
+
+
+	// https://mvnrepository.com/artifact/com.google.oauth-client/google-oauth-client
+
+	annotationProcessor 'com.speedment.jpastreamer:projection:1.0.2'
+	//compile group: 'org.json', name: 'json', version: '20090211'
+	implementation 'org.json:json:20210307'
+
+// https://mvnrepository.com/artifact/th.co.geniustree.springdata.jpa/specification-with-projections
+	implementation 'th.co.geniustree.springdata.jpa:specification-with-projections:2.0.2'
+
+	// https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-resources-plugin
+	implementation group: 'org.apache.maven.plugins', name: 'maven-resources-plugin', version: '3.2.0'
+
+
+	//AmazonS3
+	implementation platform('com.amazonaws:aws-java-sdk-bom:1.11.1000')
+	implementation 'com.amazonaws:aws-java-sdk-s3'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+
+
+// https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-rest
+	implementation 'org.springframework.boot:spring-boot-starter-data-rest:2.7.3'
+
+
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+//	implementation 'org.springframework.boot:spring-boot-starter-security'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation group: 'javax.mail', name: 'mail', version: '1.5.0-b01'
+	implementation 'org.springframework.boot:spring-boot-starter-mail:2.7.3'
+	implementation('mysql:mysql-connector-java')
+	runtimeOnly 'com.h2database:h2'
+	compileOnly 'org.projectlombok:lombok:1.18.22'
+	annotationProcessor 'org.projectlombok:lombok:1.18.24'
+
+	testCompileOnly 'org.projectlombok:lombok:1.18.22'
+	testAnnotationProcessor 'org.projectlombok:lombok:1.18.22'
+	implementation 'com.auth0:java-jwt:4.0.0'
+
+	implementation 'io.jsonwebtoken:jjwt-api:0.11.5'
+	runtimeOnly 'io.jsonwebtoken:jjwt-impl:0.11.5'
+	runtimeOnly 'io.jsonwebtoken:jjwt-jackson:0.11.5'
+
+
+	testImplementation('org.springframework.boot:spring-boot-starter-test') {
+		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+	}
+
+	// https://mvnrepository.com/artifact/net.sf.jasperreports/jasperreports
+	implementation 'net.sf.jasperreports:jasperreports:6.20.0'
+
+	// https://mvnrepository.com/artifact/net.sf.jasperreports/jasperreports-fonts
+	implementation 'net.sf.jasperreports:jasperreports-fonts:6.20.0'
+
+	implementation group: 'xalan', name: 'xalan', version: '2.7.2'
+
+
+// https://mvnrepository.com/artifact/javax.faces/jsf-api
+	compileOnly 'javax.faces:jsf-api:2.1'
+
+//Thanks for using https://jar-download.com
+//Thanks for using https://jar-download.com
+//Thanks for using https://jar-download.com
+// https://mvnrepository.com/artifact/com.google.zxing/core
+	implementation 'com.google.zxing:core:3.5.0'
+
+
+
+
+
+// https://mvnrepository.com/artifact/com.github.wnameless/workbook-accessor
+	implementation 'com.github.wnameless:workbook-accessor:1.5.0'
+
+	implementation group: 'org.apache.pdfbox', name: 'pdfbox-tools', version: '2.0.19'
+
+// https://mvnrepository.com/artifact/net.sf.cssbox/pdf2dom
+	implementation group: 'net.sf.cssbox', name: 'pdf2dom', version: '2.0.1'
+
+// https://mvnrepository.com/artifact/com.lowagie/itext
+	implementation 'com.lowagie:itext:4.2.2'
+
+	// https://mvnrepository.com/artifact/com.lowagie/itext
+	implementation group: 'com.lowagie', name: 'itext', version: '4.2.1'
+
+	implementation group: 'com.lowagie', name: 'itext', version: '2.1.5'
+
+// https://mvnrepository.com/artifact/com.itextpdf/itextpdf
+	implementation 'com.itextpdf:itextpdf:5.5.13.3'
+
+	// https://mvnrepository.com/artifact/org.apache.xmlgraphics/batik-all
+	implementation group: 'org.apache.xmlgraphics', name: 'batik-all', version: '1.14', ext: 'pom'
+
+	runtimeOnly 'mysql:mysql-connector-java'
+	annotationProcessor 'org.projectlombok:lombok'
+
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}

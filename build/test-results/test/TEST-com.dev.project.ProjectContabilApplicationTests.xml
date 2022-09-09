@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.dev.project.ProjectContabilApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-09-09T02:03:45" hostname="brunolocal.local" time="0.105">
+  <properties/>
+  <testcase name="contextLoads()" classname="com.dev.project.ProjectContabilApplicationTests" time="0.105"/>
+  <system-out><![CDATA[23:03:35.939 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+23:03:35.949 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+23:03:36.005 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.dev.project.ProjectContabilApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+23:03:36.019 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.dev.project.ProjectContabilApplicationTests], using SpringBootContextLoader
+23:03:36.023 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.dev.project.ProjectContabilApplicationTests]: class path resource [com/dev/project/ProjectContabilApplicationTests-context.xml] does not exist
+23:03:36.024 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.dev.project.ProjectContabilApplicationTests]: class path resource [com/dev/project/ProjectContabilApplicationTestsContext.groovy] does not exist
+23:03:36.024 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.dev.project.ProjectContabilApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+23:03:36.025 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.dev.project.ProjectContabilApplicationTests]: ProjectContabilApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+23:03:36.081 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.dev.project.ProjectContabilApplicationTests]
+23:03:36.169 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/Users/brunodeveloper/Documents/Project_Java_Fiscal/build/classes/java/main/com/dev/project/ProjectContabilApplication.class]
+23:03:36.171 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.dev.project.ProjectContabilApplication for test class com.dev.project.ProjectContabilApplicationTests
+23:03:36.360 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.dev.project.ProjectContabilApplicationTests]: using defaults.
+23:03:36.361 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+23:03:36.389 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@56113384, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5669c5fb, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@373ebf74, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@5f9678e1, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@c4ed84, org.springframework.test.context.support.DirtiesContextTestExecutionListener@189aa67a, org.springframework.test.context.transaction.TransactionalTestExecutionListener@5a9d6f02, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@362045c0, org.springframework.test.context.event.EventPublishingTestExecutionListener@112f364d, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@5ccbeb64, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@6d9f7a80, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@59252cb6, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@31d0e481, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@3243b914, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@241e8ea6]
+23:03:36.394 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@67c2e933 testClass = ProjectContabilApplicationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@41dd05a testClass = ProjectContabilApplicationTests, locations = '{}', classes = '{class com.dev.project.ProjectContabilApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@7098b907, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@6cc4cdb9, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@32115b28, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@4b8729ff, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@376a0d86, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@3e58a80e], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true]], class annotated with @DirtiesContext [false] with mode [null].
+
+                        (
+                       .#
+                      ##
+                   /##      ,
+                /##.   ##
+              (##   ##*
+              ##   .##                    ##*
+               ((   (##(                  ##*
+                 (    ##                  ##*  ##*,###.  ##    ##. *##,*###
+            ,,        /       ../(        ##*        ##  (##   ##        ##
+       /((((/******//((((/,       (.      ##* .##    ##   ##/ ##   ##/   ##
+                                ((        ##* ###   ###    ####    ##   .##
+           ./(((((((((((/    *            ##     .
+            *                           ###
+              *(((((((/
+   .(((                       *(
+                              ,(/
+
+2022-09-08 23:03:37.069  WARN 80304 --- [    Test worker] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/Users/brunodeveloper/.gradle/caches/modules-2/files-2.1/org.json/json/20210307/528c8df3757e8bcf151817b1d7b9b434f6aa08d5/json-20210307.jar!/org/json/JSONObject.class
+	jar:file:/Users/brunodeveloper/.gradle/caches/modules-2/files-2.1/com.vaadin.external.google/android-json/0.0.20131108.vaadin1/fa26d351fe62a6a17f5cda1287c1c6110dec413f/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2022-09-08 23:03:37.110  INFO 80304 --- [    Test worker] c.d.p.ProjectContabilApplicationTests    : Starting ProjectContabilApplicationTests using Java 1.8.0_345 on brunolocal.local with PID 80304 (started by brunodeveloper in /Users/brunodeveloper/Documents/Project_Java_Fiscal)
+2022-09-08 23:03:37.113  INFO 80304 --- [    Test worker] c.d.p.ProjectContabilApplicationTests    : No active profile set, falling back to 1 default profile: "default"
+2022-09-08 23:03:38.199  INFO 80304 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-09-08 23:03:38.272  INFO 80304 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 61 ms. Found 1 JPA repository interfaces.
+2022-09-08 23:03:39.595  INFO 80304 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-09-08 23:03:40.150  INFO 80304 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-09-08 23:03:40.308  INFO 80304 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-09-08 23:03:40.385  INFO 80304 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-09-08 23:03:40.681  INFO 80304 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-09-08 23:03:40.883  INFO 80304 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2022-09-08 23:03:41.420  INFO 80304 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-09-08 23:03:41.429  INFO 80304 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-09-08 23:03:43.689  INFO 80304 --- [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://127.0.0.1:3306/db_project?useTimezone=true&serverTimezone=America/Sao_Paulo'
+2022-09-08 23:03:45.062  INFO 80304 --- [    Test worker] c.d.p.ProjectContabilApplicationTests    : Started ProjectContabilApplicationTests in 8.617 seconds (JVM running for 10.356)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
