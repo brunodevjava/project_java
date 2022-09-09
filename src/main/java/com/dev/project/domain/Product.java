@@ -9,24 +9,20 @@ import java.time.ZoneId;
 @lombok.Data
 @NoArgsConstructor
 @Entity
-@Table(name = "data")
+@Table(name = "product")
 public class Product {
 
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String kindOfPerson;
     private String name;
-    private String fantasyName;
-    private String cnpj;
-    private String cpf;
-    private String insest;
-   // private Long addressId;
+    private String category;
+    private String code;
+    private String unity;
 
     @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-    private Address address;
-
+    private Ncm ncm;
 
 
     private LocalDateTime createdDate;
