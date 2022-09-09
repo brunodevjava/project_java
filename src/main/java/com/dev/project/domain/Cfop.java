@@ -9,26 +9,15 @@ import java.time.ZoneId;
 @lombok.Data
 @NoArgsConstructor
 @Entity
-@Table(name = "data")
+@Table(name = "cfop")
 public class Cfop {
 
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String kindOfPerson;
-    private String name;
-    private String fantasyName;
-    private String cnpj;
-    private String cpf;
-    private String insest;
-   // private Long addressId;
-
-    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-    private Address address;
-
-
-
+    private String code;
+    private String description;
     private LocalDateTime createdDate;
     private LocalDateTime updateDate;
 
