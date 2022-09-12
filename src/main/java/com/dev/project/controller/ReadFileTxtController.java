@@ -9,7 +9,9 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.http.HttpServletRequest;
+import java.io.BufferedWriter;
 import java.io.IOException;
+import java.io.PrintStream;
 import java.util.List;
 
 @RestController
@@ -21,7 +23,7 @@ public class ReadFileTxtController {
     private ReadFileTxt service;
 
     @PostMapping
-    public String save(@RequestPart(value = "file") MultipartFile file) throws IOException {
+    public byte[] save(@RequestPart(value = "file") MultipartFile file) throws IOException {
         return service.ReadFile(file);
     }
 
