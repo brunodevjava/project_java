@@ -4,6 +4,7 @@ on:
   push:
     branches: [ "preproducao" ]
 
+
 jobs:
   build:
     runs-on: self-hosted
