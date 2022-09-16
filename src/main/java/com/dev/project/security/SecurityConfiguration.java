@@ -36,6 +36,11 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .antMatchers("/auth/**");
     }
 
+    /*
+     PROTECAO HTTP COM FILTROS DE AUTENTICACAO JWT TOKEN,
+     ADD DE CORS, CRIACAO DE POLITICA DE PRIVACIDADE E PROTECAO
+     CONTRA SQL INJECTION;
+     */
     @Override
     public void configure(HttpSecurity http) throws Exception {
         http
@@ -52,5 +57,6 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .httpBasic().disable()
                 .logout().disable();
     }
+
 
 }
