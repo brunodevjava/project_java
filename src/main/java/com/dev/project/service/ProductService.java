@@ -1,14 +1,9 @@
 package com.dev.project.service;
 
 import com.dev.project.convertions.AbstractConversion;
-import com.dev.project.domain.Address;
-import com.dev.project.domain.Ncm;
 import com.dev.project.domain.Product;
-import com.dev.project.dto.NcmTO;
 import com.dev.project.dto.ProductTO;
 import com.dev.project.exception.ResourceNotFoundException;
-import com.dev.project.repository.AddressRepository;
-import com.dev.project.repository.NcmRepository;
 import com.dev.project.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
