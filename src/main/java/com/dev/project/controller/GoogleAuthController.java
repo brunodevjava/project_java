@@ -39,7 +39,7 @@ public class GoogleAuthController {
         //I've decided to generate QRCode on backend site
         QRCodeWriter qrCodeWriter = new QRCodeWriter();
 
-        String otpAuthURL = GoogleAuthenticatorQRGenerator.getOtpAuthTotpURL("GESTÃO_YDUQS", email, key);
+        String otpAuthURL = GoogleAuthenticatorQRGenerator.getOtpAuthTotpURL("PROJECT_API_AUTH", email, key);
 
         BitMatrix bitMatrix = qrCodeWriter.encode(otpAuthURL, BarcodeFormat.QR_CODE, 150, 150);
 

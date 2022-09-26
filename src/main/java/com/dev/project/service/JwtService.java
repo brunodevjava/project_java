@@ -1,6 +1,7 @@
 package com.dev.project.service;
 
 import com.dev.project.dto.DataTO;
+import com.dev.project.dto.UserTO;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jws;
 import io.jsonwebtoken.Jwts;
@@ -23,7 +24,7 @@ public class JwtService {
     @Value("${jwt.secret}")
     private String key;
 
-    public String toJWT(DataTO userTO) {
+    public String toJWT(UserTO userTO) {
         LocalDateTime now = LocalDateTime.now();
         LocalDateTime nextTime = now.plus(1, ChronoUnit.WEEKS);
         return Jwts.builder()
