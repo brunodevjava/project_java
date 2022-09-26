@@ -15,6 +15,7 @@ import java.util.List;
 @Entity
 @Table(name = "data")
 public class Data {
+    private static LocalDateTime setNow = LocalDateTime.now(ZoneId.of("America/Sao_Paulo"));
 
 
     @Id
@@ -36,16 +37,15 @@ public class Data {
     private LocalDateTime createdDate;
     private LocalDateTime updateDate;
 
-
     @PrePersist
     public void prePersist() {
-        createdDate = LocalDateTime.now(ZoneId.of("America/Sao_Paulo"));
+        createdDate = setNow;
 
     }
 
     @PreUpdate
     public void preUpdate() {
-        updateDate = LocalDateTime.now(ZoneId.of("America/Sao_Paulo"));
+        updateDate = setNow;
 
     }
 
